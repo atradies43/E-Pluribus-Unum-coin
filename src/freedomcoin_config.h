@@ -1,21 +1,21 @@
-// Copyright (c) 2011-2014 The Freedomcoin developers
+// Copyright (c) 2011-2014 The E-Pluribus-Unum-coin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #pragma once
 
-#define FREEDOMCOIN_MAX_BLOCK_NUMBER                     500000000
-#define FREEDOMCOIN_MAX_BLOCK_SIZE                       500000000  // block header blob limit, never used!
-#define FREEDOMCOIN_MAX_TX_SIZE                          1000000000
-#define FREEDOMCOIN_PUBLIC_ADDRESS_TEXTBLOB_VER          0
+#define E-Pluribus-Unum-coin_MAX_BLOCK_NUMBER                 500000000
+#define E-Pluribus-Unum-coin_MAX_BLOCK_SIZE                     500000000  // block header blob limit, never used!
+#define E-Pluribus-Unum-coin_MAX_TX_SIZE                          1000000000
+#define E-Pluribus-Unum-coin_PUBLIC_ADDRESS_TEXTBLOB_VER          0
 //TODO Currency-specific address prefix
-#define FREEDOMCOIN_PUBLIC_ADDRESS_BASE58_PREFIX        
+#define E-Pluribus-Unum-coin_PUBLIC_ADDRESS_BASE58_PREFIX        
 //TODO Choose maturity period for your currency
-#define FREEDOMCOIN_MINED_MONEY_UNLOCK_WINDOW            
+#define E-Pluribus-Unum-coin_MINED_MONEY_UNLOCK_WINDOW            
 #define CURRENT_TRANSACTION_VERSION                     1
 #define CURRENT_BLOCK_MAJOR_VERSION                     1
 #define CURRENT_BLOCK_MINOR_VERSION                     0
-#define FREEDOMCOIN_BLOCK_FUTURE_TIME_LIMIT              60*60*2
+#define E-Pluribus-Unum-coin_BLOCK_FUTURE_TIME_LIMIT              60*60*2
 
 #define BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW               60
 
@@ -26,11 +26,11 @@
 #define EMISSION_SPEED_FACTOR                           (18)
 
 //TODO Define number of blocks for block size median calculation
-#define FREEDOMCOIN_REWARD_BLOCKS_WINDOW                 100
-#define FREEDOMCOIN_BLOCK_GRANTED_FULL_REWARD_ZONE       10000 //size of block (bytes) after which reward for block calculated using block size
-#define FREEDOMCOIN_COINBASE_BLOB_RESERVED_SIZE          600
+#define E-Pluribus-Unum-coin_REWARD_BLOCKS_WINDOW                 100
+#define E-Pluribus-Unum-coin_BLOCK_GRANTED_FULL_REWARD_ZONE       10000 //size of block (bytes) after which reward for block calculated using block size
+#define E-Pluribus-Unum-coin_COINBASE_BLOB_RESERVED_SIZE          600
 //TODO Define number of digits
-#define FREEDOMCOIN_DISPLAY_DECIMAL_POINT                
+#define E-Pluribus-Unum-coin_DISPLAY_DECIMAL_POINT                
 //TODO Define number of smallest units in one coin
 #define COIN                                            
 //TODO Define default fee for transactions
@@ -38,7 +38,7 @@
 
 //TODO Define preferred block's target time
 #define DIFFICULTY_TARGET                               120 // seconds
-//TODO There are options to tune FREEDOMCOIN's difficulty retargeting function. 
+//TODO There are options to tune E-Pluribus-Unum-coin's difficulty retargeting function. 
 //TODO We recommend not to change it.
 #define DIFFICULTY_WINDOW                               720 // blocks
 #define DIFFICULTY_LAG                                  15
@@ -46,8 +46,8 @@
 #define DIFFICULTY_BLOCKS_COUNT                         DIFFICULTY_WINDOW + DIFFICULTY_LAG
 
 
-#define FREEDOMCOIN_LOCKED_TX_ALLOWED_DELTA_SECONDS      DIFFICULTY_TARGET * FREEDOMCOIN_LOCKED_TX_ALLOWED_DELTA_BLOCKS
-#define FREEDOMCOIN_LOCKED_TX_ALLOWED_DELTA_BLOCKS       1
+#define E-Pluribus-Unum-coin_LOCKED_TX_ALLOWED_DELTA_SECONDS      DIFFICULTY_TARGET * E-Pluribus-Unum-coin_LOCKED_TX_ALLOWED_DELTA_BLOCKS
+#define E-Pluribus-Unum-coin_LOCKED_TX_ALLOWED_DELTA_BLOCKS       1
 
 
 #define DIFFICULTY_BLOCKS_ESTIMATE_TIMESPAN             DIFFICULTY_TARGET
@@ -55,7 +55,7 @@
 
 #define BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT          10000  //by default, blocks ids count in synchronizing
 #define BLOCKS_SYNCHRONIZING_DEFAULT_COUNT              200    //by default, blocks count in blocks downloading
-#define FREEDOMCOIN_PROTOCOL_HOP_RELAX_COUNT             3      //value of hop, after which we use only announce of new block
+#define E-Pluribus-Unum-coin_PROTOCOL_HOP_RELAX_COUNT             3      //value of hop, after which we use only announce of new block
 
 //TODO This port will be used by the daemon to establish connections with p2p network
 #define P2P_DEFAULT_PORT                                
@@ -80,11 +80,11 @@
 #define ALLOW_DEBUG_COMMANDS
 
 //TODO Put here the name of your currency
-#define FREEDOMCOIN_NAME                         
-#define FREEDOMCOIN_BLOCKS_FILENAME              "blocks.dat"
-#define FREEDOMCOIN_BLOCKINDEXES_FILENAME        "blockindexes.dat"
-#define FREEDOMCOIN_BLOCKSCACHE_FILENAME         "blockscache.dat"
-#define FREEDOMCOIN_POOLDATA_FILENAME            "poolstate.bin"
+#define E-Pluribus-Unum-coin_NAME                         
+#define E-Pluribus-Unum-coin_BLOCKS_FILENAME              "blocks.dat"
+#define E-Pluribus-Unum-coin_BLOCKINDEXES_FILENAME        "blockindexes.dat"
+#define E-Pluribus-Unum-coin_BLOCKSCACHE_FILENAME         "blockscache.dat"
+#define E-Pluribus-Unum-coin_POOLDATA_FILENAME            "poolstate.bin"
 #define P2P_NET_DATA_FILENAME                   "p2pstate.bin"
 #define MINER_CONFIG_FILE_NAME                  "miner_conf.json"
 
