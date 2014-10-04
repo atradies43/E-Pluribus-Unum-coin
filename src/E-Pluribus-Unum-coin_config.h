@@ -26,7 +26,7 @@
 #define EMISSION_SPEED_FACTOR                           (18)
 
 //TODO Define number of blocks for block size median calculation
-#define E-Pluribus-Unum-coin_REWARD_BLOCKS_WINDOW                 100
+#define E-Pluribus-Unum-coin_REWARD_BLOCKS_WINDOW                 80
 #define E-Pluribus-Unum-coin_BLOCK_GRANTED_FULL_REWARD_ZONE       10000 //size of block (bytes) after which reward for block calculated using block size
 #define E-Pluribus-Unum-coin_COINBASE_BLOB_RESERVED_SIZE          600
 //TODO Define number of digits
@@ -37,7 +37,7 @@
 #define DEFAULT_FEE                                     
 
 //TODO Define preferred block's target time
-#define DIFFICULTY_TARGET                               120 // seconds
+#define DIFFICULTY_TARGET                               80 // seconds
 //TODO There are options to tune E-Pluribus-Unum-coin's difficulty retargeting function. 
 //TODO We recommend not to change it.
 #define DIFFICULTY_WINDOW                               720 // blocks
@@ -58,9 +58,9 @@
 #define E-Pluribus-Unum-coin_PROTOCOL_HOP_RELAX_COUNT             3      //value of hop, after which we use only announce of new block
 
 //TODO This port will be used by the daemon to establish connections with p2p network
-#define P2P_DEFAULT_PORT                                
+#define P2P_DEFAULT_PORT                                17236
 //TODO This port will be used by the daemon to interact with simlewallet
-#define RPC_DEFAULT_PORT                                
+#define RPC_DEFAULT_PORT                                18236
 #define COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT           1000
 
 #define P2P_LOCAL_WHITE_PEERLIST_LIMIT                  1000
